@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,7 +44,11 @@ public class MainNameFragment extends android.support.v4.app.Fragment{
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        MainNameRecycleViewAdapter adapter = new MainNameRecycleViewAdapter(this.createDataset());
+
+        final List<NameData> dataset = createDataset();
+
+
+        MainNameRecycleViewAdapter adapter = new MainNameRecycleViewAdapter(dataset);
 
         LinearLayoutManager llm = new LinearLayoutManager(getContext());
 
@@ -52,6 +57,12 @@ public class MainNameFragment extends android.support.v4.app.Fragment{
         mRecyclerView.setLayoutManager(llm);
 
         mRecyclerView.setAdapter(adapter);
+        adapter.setOnItemClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), String.valueOf(dataset.get(view.getId()).getName()), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     private List<NameData> createDataset() {

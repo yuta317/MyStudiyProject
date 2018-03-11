@@ -1,11 +1,5 @@
 package jp.androidbook.mystudiyproject.adapter;
 
-
-
-
-
-
-
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -19,7 +13,7 @@ import jp.androidbook.mystudiyproject.fragment.MainTimeFragment;
 
 public class MainFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    private String tabTitles[] = new String[]{"Tab1", "Tab2", "Tab3"};
+    private String tabTitles[] = new String[]{"名前", "チーム", "時間"};
 
     public MainFragmentPagerAdapter(FragmentManager manager) {
         super(manager);

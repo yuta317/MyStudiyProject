@@ -18,6 +18,7 @@ import jp.androidbook.mystudiyproject.viewHolder.MainHomeViewHolder;
 public class MainNameRecycleViewAdapter extends RecyclerView.Adapter<MainHomeViewHolder> {
 
     private List<NameData> list;
+    private View.OnClickListener listener;
 
     public MainNameRecycleViewAdapter(List<NameData> list) {
         this.list = list;
@@ -33,6 +34,17 @@ public class MainNameRecycleViewAdapter extends RecyclerView.Adapter<MainHomeVie
     @Override
     public void onBindViewHolder(MainHomeViewHolder holder, int position) {
         holder.nameText.setText(list.get(position).getName());
+        holder.linearLayout.setId(holder.getAdapterPosition());
+        holder.linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                listener.onClick(view);
+            }
+        });
+    }
+
+    public void setOnItemClickListener(View.OnClickListener listener) {
+        this.listener = listener;
     }
 
     @Override

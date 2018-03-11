@@ -2,6 +2,7 @@ package jp.androidbook.mystudiyproject.viewHolder;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import butterknife.BindView;
@@ -15,6 +16,9 @@ public class MainHomeViewHolder extends RecyclerView.ViewHolder{
 
     @BindView(R.id.nameTextView)
     public TextView nameText;
+
+    @BindView(R.id.linearLayout)
+    public LinearLayout linearLayout;
 
     Unbinder unbinder;
 
