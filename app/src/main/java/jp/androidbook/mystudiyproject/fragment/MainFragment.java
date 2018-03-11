@@ -47,9 +47,9 @@ public class MainFragment extends Fragment {
         MainFragmentPagerAdapter adapter = new MainFragmentPagerAdapter(getChildFragmentManager());
         mViewPager.setAdapter(adapter);
         mTabLayout.setupWithViewPager(mViewPager);
-        mTabLayout.addTab(mTabLayout.newTab().setText("名前"));
-        mTabLayout.addTab(mTabLayout.newTab().setText("チーム"));
-        mTabLayout.addTab(mTabLayout.newTab().setText("時間"));
+//        mTabLayout.addTab(mTabLayout.newTab().setText("名前"));
+//        mTabLayout.addTab(mTabLayout.newTab().setText("チーム"));
+//        mTabLayout.addTab(mTabLayout.newTab().setText("時間"));
     }
 
 }

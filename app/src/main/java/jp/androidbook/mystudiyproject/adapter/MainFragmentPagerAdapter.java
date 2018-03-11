@@ -19,6 +19,8 @@ import jp.androidbook.mystudiyproject.fragment.MainTimeFragment;
 
 public class MainFragmentPagerAdapter extends FragmentPagerAdapter {
 
+    private String tabTitles[] = new String[]{"Tab1", "Tab2", "Tab3"};
+
     public MainFragmentPagerAdapter(FragmentManager manager) {
         super(manager);
     }
@@ -41,5 +43,11 @@ public class MainFragmentPagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         return 3;
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        // Generate title based on item position
+        return tabTitles[position];
     }
 }
