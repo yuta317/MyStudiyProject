@@ -11,9 +11,6 @@ import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import jp.androidbook.mystudiyproject.R;
 
-/**
- * Created by kikumayuuta on 2018/03/04.
- */
 
 public class MainTimeFragment extends android.support.v4.app.Fragment{
     private Unbinder unbinder;

@@ -15,9 +15,7 @@ import jp.androidbook.mystudiyproject.fragment.MainNameFragment;
 import jp.androidbook.mystudiyproject.fragment.MainTeamFragment;
 import jp.androidbook.mystudiyproject.fragment.MainTimeFragment;
 
-/**
- * Created by kikumayuuta on 2018/03/04.
- */
+
 
 public class MainFragmentPagerAdapter extends FragmentPagerAdapter {
 
