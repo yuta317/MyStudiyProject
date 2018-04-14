@@ -6,14 +6,14 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 
 import jp.androidbook.mystudiyproject.fragment.MainNameFragment;
-import jp.androidbook.mystudiyproject.fragment.MainTeamFragment;
+import jp.androidbook.mystudiyproject.fragment.MainMemoFragment;
 import jp.androidbook.mystudiyproject.fragment.MainTimeFragment;
 
 
 
 public class MainFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    private String tabTitles[] = new String[]{"名前", "チーム", "時間"};
+    private String tabTitles[] = new String[]{"名前", "メモ", "時間"};
 
     public MainFragmentPagerAdapter(FragmentManager manager) {
         super(manager);
@@ -27,7 +27,7 @@ public class MainFragmentPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return MainNameFragment.getMainNameFragment();
             case 1:
-                return MainTeamFragment.getMainTeamFragment();
+                return MainMemoFragment.getMainTeamFragment();
             case 2:
                 return MainTimeFragment.getMainTimeFragment();
         }

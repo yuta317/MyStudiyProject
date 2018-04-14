@@ -11,9 +11,6 @@ import jp.androidbook.mystudiyproject.R;
 import jp.androidbook.mystudiyproject.data.NameData;
 import jp.androidbook.mystudiyproject.viewHolder.MainHomeViewHolder;
 
-/**
- * Created by kikumayuuta on 2018/03/11.
- */
 
 public class MainNameRecycleViewAdapter extends RecyclerView.Adapter<MainHomeViewHolder> {
 

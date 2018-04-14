@@ -12,11 +12,11 @@ import jp.androidbook.mystudiyproject.R;
 
 
 
-public class MainTeamFragment extends android.support.v4.app.Fragment{
+public class MainMemoFragment extends android.support.v4.app.Fragment{
     private Unbinder unbinder;
 
-    public static MainTeamFragment getMainTeamFragment(){
-        MainTeamFragment mainFragmentTeam = new MainTeamFragment();
+    public static MainMemoFragment getMainTeamFragment(){
+        MainMemoFragment mainFragmentTeam = new MainMemoFragment();
 
         return mainFragmentTeam;
     }
@@ -28,6 +28,7 @@ public class MainTeamFragment extends android.support.v4.app.Fragment{
         super.onCreateView(inflater, container, savedInstanceState);
         View view = inflater.inflate(R.layout.fragment_main_team,container, false);
        unbinder = ButterKnife.bind(this,view);
+
 
         return view;
     }
